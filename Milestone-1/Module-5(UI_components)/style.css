@@ -1,0 +1,25 @@
+.parent {
+    background-color: bisque;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-around;
+    justify-content: start;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    height: 80vh;
+    align-items: start;
+    align-items: end;
+    align-items: center;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+.child {
+    background-color: rgb(141, 244, 145);
+    border: 2px solid brown;
+    margin: 10px 0;
+    padding: 18px;
+    font-size: 23px;
+}
