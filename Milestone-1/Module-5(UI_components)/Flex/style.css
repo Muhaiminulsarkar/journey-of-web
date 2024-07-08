@@ -12,8 +12,12 @@
     align-items: start;
     align-items: end;
     align-items: center;
-    flex-direction: column;
     flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    flex-direction: column;
+    flex-wrap: wrap;
+
 }
 
 .child {
