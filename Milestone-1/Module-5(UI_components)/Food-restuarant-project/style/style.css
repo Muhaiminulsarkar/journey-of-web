@@ -6,6 +6,26 @@
     padding: 0;
 }
 
+.btn-container {
+    text-align: center;
+}
+
+.btn {
+    border-radius: 8px;
+    margin: 22px 0px;
+    padding: 21px 32px 21px 32px;
+    border: none;
+    background: rgb(82, 195, 3);
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+
 #hero {
     height: 950px;
     background-image: linear-gradient(0deg, rgb(16, 16, 16) -19.5%, rgba(16, 16, 16, 0) 100%), url("../assets/hero-bg.png");
@@ -45,10 +65,204 @@
     color: rgb(255, 255, 255);
     font-family: Work Sans;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+#card-box {
+    width: 1320px;
+    margin: 60px auto;
+}
+
+#card-box .sub {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.container .title {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+
+.card-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    max-width: 424px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card .image-box {
+    width: 424px;
+}
+
+.card .image-box img {
+    width: 100%;
+}
+
+.card .shop {
+    border-radius: 8px;
+    background: rgba(82, 195, 3, 0.15);
+    padding: 14px 32px 14px 32px;
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.card h1 {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.card p {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 18px;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0%;
     text-align: center;
     opacity: 0.7;
+}
 
+#social {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+}
+
+.social-image {
+    height: 671px;
+}
+
+.social-container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-container h1 {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.social-container .sub {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 24px;
+    margin: 32px 0px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    opacity: 0.6;
+}
+
+.social-container .follow {
+    border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+    border-top: 1px solid rgba(16, 16, 16, 0.2);
+    color: rgb(16, 16, 16);
+    padding: 30px 10px 30px 10px;
+    font-family: Work Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 32px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer {
+    height: 700px;
+    background-image: url("../assets/social-bg.png"),
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.9));
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-content h1 {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer-content .sub {
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 24px;
+    margin: 32px 0px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.footer-content .follow {
+    border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+    border-top: 1px solid rgba(16, 16, 16, 0.2);
+    color: rgb(16, 16, 16);
+    padding: 30px 10px 30px 10px;
+    font-family: Work Sans;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 32px;
 }
