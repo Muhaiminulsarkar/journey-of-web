@@ -12,6 +12,10 @@
 
 
 /* shared style */
+.bg {
+    background: rgb(255, 248, 243);
+}
+
 .text-primary {
     color: #FD6E0A;
 }
@@ -33,7 +37,7 @@
 }
 
 .btn-secondary {
-    background-color: white;
+    background-color: rgb(255, 248, 243);
     color: #FD6E0A;
     font-family: Open Sans;
     font-size: 20px;
@@ -42,12 +46,45 @@
     border-radius: 5px;
     border: 2px solid #FD6E0A;
     cursor: pointer;
+    margin-left: 20px;
 }
 
+.section-title {
+    color: rgb(24, 24, 24);
+    font-family: Open Sans;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.section-description {
+    color: rgb(117, 117, 117);
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.section-sub {
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+/* header style */
 .header {
     background-image: url("../images/developer.png"), url("../images/header_bg.png");
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    padding-top: 20px;
 }
 
 /* nav style */
@@ -99,6 +136,7 @@ nav ul a {
     font-family: Open Sans;
     font-size: 45px;
     font-weight: 600;
+    margin-bottom: -50px;
 }
 
 .banner-title {
@@ -106,6 +144,7 @@ nav ul a {
     font-family: Open Sans;
     font-size: 85px;
     font-weight: 700;
+    margin-bottom: -10px;
 }
 
 .banner-description {
@@ -118,4 +157,48 @@ nav ul a {
 .banner-img {
     width: 584px;
     height: 676px;
+}
+
+/*main styles  */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+/* about styles */
+
+.about {
+    border-radius: 10px;
+    padding: 131px 150px;
+    margin: 130px 0;
+    text-align: center;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* what i do details */
+
+.do-details {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.item {
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 25px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img {
+    margin-bottom: 40px;
 }
