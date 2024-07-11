@@ -1,13 +1,26 @@
-.swim-container{
+.swim-container {
     background-color: antiquewhite;
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: center;
-    padding:50px;
+    padding: 50px;
     border: 2px solid red;
 }
-.box{
+
+.box {
     margin: 50px;
     border: 2px solid blue;
     padding: 40px;
+}
+
+/* .ring img {
+    position: relative;
+    top: 50px;
+    left: 200px;
+} */
+
+.ring{
+    position: absolute;
+    top:50px;
+    left: 50px;
 }
