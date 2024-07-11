@@ -1,0 +1,13 @@
+.swim-container{
+    background-color: antiquewhite;
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+    padding:50px;
+    border: 2px solid red;
+}
+.box{
+    margin: 50px;
+    border: 2px solid blue;
+    padding: 40px;
+}
