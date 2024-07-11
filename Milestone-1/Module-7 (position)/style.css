@@ -1,4 +1,5 @@
 .swim-container {
+
     background-color: antiquewhite;
     width: 80%;
     margin: 0 auto;
@@ -8,8 +9,9 @@
 }
 
 .box {
+    position: relative;
     margin: 50px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 40px;
 }
 
@@ -19,8 +21,15 @@
     left: 200px;
 } */
 
-.ring{
-    position: absolute;
-    top:50px;
-    left: 50px;
+.boy {
+    top: 190px;
+    z-index: 2;
+}
+
+.ring {
+    z-index: 1;
+}
+
+.water {
+    bottom: 200px;
 }
