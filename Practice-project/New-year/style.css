@@ -1,0 +1,48 @@
+.body-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container div {
+    width: 35%;
+    padding: 30px;
+}
+
+.middle-pic img{
+    border: 8px solid red;
+    border-radius: 50%;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+.half-container div{
+    width: 1320px;
+}
+.half-container{
+    display: flex;
+}
+
+.discount-container{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+.fifty-container{
+    position: absolute;
+    left:85px;
+}
+
+.box{
+    width: 500px;
+    position: relative;
+    top:150px;
+    left:130px;
+}
