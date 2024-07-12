@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+        .main {
+            border: 2px solid black;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+
+        }
+
+        .left {
+            width: 30%;
+            background-color: cadetblue;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            width: 70%;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width:576px) {
+            .main {
+                flex-direction: column;
+            }
+            .left{
+                height: 30%;
+                width: 100%;
+            }
+            .right{
+                height: 30%;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <div class="left">
+            <h1>Left</h1>
+        </div>
+        <div class="right">
+            <h1>Right</h1>
+        </div>
+    </section>
+</body>
+
+</html>
