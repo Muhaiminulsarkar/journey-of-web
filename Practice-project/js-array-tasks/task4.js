@@ -16,10 +16,7 @@ const food = 'ros o gol l a';
 
 const age = 15;
 
-if ((Array.isArray(nums) === true) ||
-    (Array.isArray(food) === true) ||
-    (Array.isArray(friends)) === true ||
-    (Array.isArray(age)) === true) {
+if ((Array.isArray(age) === true)) {
     console.log('This variable contain a Array')
 }
 else {
