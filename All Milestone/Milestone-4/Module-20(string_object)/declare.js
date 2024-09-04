@@ -10,6 +10,3 @@ console.log(rubber)
 let str = "Mississippi";
 console.log(str.indexOf("i", 3));
 
-const str = "Hello";
-str[0] = "h";
-console.log(str);
