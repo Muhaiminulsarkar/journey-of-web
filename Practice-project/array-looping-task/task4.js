@@ -10,7 +10,7 @@ Output:
 
 */
 
-const statement = 'I am a hard working person'
+const statement = 'I am a hard and good working person'
 
 let words = statement.split(' ');
 console.log(words);
