@@ -1,7 +1,4 @@
-//  min number
-
-
-const heights = [65, 66, 68, 72, 78, 60, 65, 66, 2];
+const prices = [20000, 16000, 50000, 100000, 12000, 30000, 35000];
 
 function getMin(numbers) {
     let min = numbers[0];
@@ -13,5 +10,5 @@ function getMin(numbers) {
     return min;
 }
 
-const min = getMin(heights);
-console.log('min value is', min);  
+const cheap = getMin(prices);
+console.log('cheapest one is: ', cheap);
