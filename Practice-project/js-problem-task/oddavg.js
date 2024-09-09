@@ -10,7 +10,7 @@
 function oddavg(numbers) {
     const odd = [];
     for (let num of numbers) {
-        if (num % 2 === 0) {
+        if (num % 2 === 1) {
             odd.push(num);
         }
     }
