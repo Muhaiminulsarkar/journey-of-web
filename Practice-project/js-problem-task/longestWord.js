@@ -1,3 +1,8 @@
+/* 
+
+Write a function to find out the longest word
+
+*/
 
 
 let sentence = ' I am learning Programming to become a programmer ';
