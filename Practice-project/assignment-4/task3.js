@@ -1,5 +1,5 @@
 function checkDigitsInName(name) {
-    console.log(name);
+
     if (typeof (name) !== 'string') {
         const sms = "Invalid Input";
         return sms;

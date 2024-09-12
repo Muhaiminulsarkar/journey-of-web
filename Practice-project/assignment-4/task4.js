@@ -7,7 +7,7 @@ function calculateFinalScore(obj) {
     const testMark = obj.testScore;
     const schoolMark = obj.schoolGrade;
     const checkFarmer = obj.isFFamily;
-    if (checkFarmer === true) {
+    if (checkFarmer === true) {   
         const bonusMark = 20;
         const total = testMark + schoolMark + bonusMark;
         if (total >= 80) {
@@ -21,6 +21,6 @@ function calculateFinalScore(obj) {
     else return false;
 
 }
-const object = { name: "Rajib", testScore: 45,  schoolGrade: 25, isFFamily : false };
+const object = { name: "Rajib", testScore: 15,  schoolGrade: 25, isFFamily : true  } ;
 const obj = calculateFinalScore(object);
 console.log(obj);

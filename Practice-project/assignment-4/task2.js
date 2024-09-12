@@ -16,7 +16,7 @@ function sendNotification(email) {
     
 }
 
-const mail = "parosh@gmail.com";
+const mail = "sadia8icloud.com";
 const result = sendNotification(mail);
 console.log(result);
 

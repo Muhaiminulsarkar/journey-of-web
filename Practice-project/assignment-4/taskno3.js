@@ -1,5 +1,5 @@
 function checkDigitsInName(name) {
-    // console.log(name);
+   
     if (typeof (name) !== 'string' || name === " ") {
         const sms = "Invalid Input";
         return sms;
@@ -8,7 +8,6 @@ function checkDigitsInName(name) {
     for (let i = 0; i < name.length; i++) {
         const letter = name[i];
         const type = isNaN(letter);
-        // console.log(letter, type);
         if (type !== true) {
             return true;
         }
@@ -19,6 +18,6 @@ function checkDigitsInName(name) {
 
 }
 
-const names = '123';
+const names = 'Name2024';
 const result = checkDigitsInName(names);
 console.log(result);
