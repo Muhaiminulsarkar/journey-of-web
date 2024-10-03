@@ -64,17 +64,22 @@ const loadDetails = async (videoId) => {
 const displayDetails = (video) => {
     // console.log(video.thumbnail)
 
-    const detailContainer = document.getElementById('modal-content');
-    
+    const detailContainer = document.getElementById("modal-content");
+
+    detailContainer.innerHTML = `
+    <img src=${video.thumbnail} />
+    <p>${video.description}</p>
+   `;
 
 
     //way-1
-    document.getElementById('showModalData').click();
+    // document.getElementById('showModalData').click();
 
     // way-2
-    // document.getElementById('customModal').showModal();
+    document.getElementById("customModal").showModal();
 
 }
+
 
 
 // create display categories
