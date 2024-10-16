@@ -1,4 +1,4 @@
-const numbers = [89, 35, 98, 12];
+const numbers = [89, 35, 98, 12, 14, 55];
 const student = {
     name: 'Salib Khan',
     age: 32,
@@ -12,6 +12,8 @@ console.log(about)
 // 2. arrow function
 const getFiftyFive = () => 55;
 const addSixtyFive = num => num + 65;
+const result = addSixtyFive(5);
+console.log(result);
 const isEven = x => x % 2 == 0;
 const addThree = (x, y, z) => x + y + z;
 const doMath = (num1, num2) => {
@@ -31,8 +33,6 @@ numbers.push(99);
 
 
 
-
-
-console.log(numbers);
-console.log(newNumbers);
-console.log(currentNumbers);
+// console.log(numbers);
+// console.log(newNumbers);
+// console.log(currentNumbers);
