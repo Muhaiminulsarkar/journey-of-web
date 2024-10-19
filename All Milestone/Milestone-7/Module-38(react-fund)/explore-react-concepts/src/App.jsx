@@ -3,8 +3,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './Todo'
+import Actor from './Actor'
+import Singer from './Singer'
 
 function App() {
+
+  const actors = ['Subir', 'Nahid', 'Rihab', 'Semon', 'Bijoy']
+
+  const singers = [
+    { id: 1, name: 'Dr. Mahfuzur', age: 68 },
+    { id: 2, name: 'Eva Rahman', age: 38 },
+    { id: 3, name: 'Shuvro Dev', age: 58 },
+    { id: 4, name: 'Pritom', age: 28 },
+  ]
 
   return (
     <>
@@ -20,7 +31,20 @@ function App() {
 
       <h1>Vite + React</h1>
 
-      <Todo
+      <Actor name={'bapparaz'}></Actor>
+
+      {
+        actors.map(actor => <Actor name={actor}></Actor>)
+      }
+
+      {
+        singers.map(singer => <Singer singer={singer}></Singer>)
+      }
+
+
+
+
+      {/* <Todo
         task={'react'}
         isDone={true}>
       </Todo>
@@ -28,7 +52,7 @@ function App() {
       <Todo
         task={'angular'}
         isDone={false}>
-      </Todo>
+      </Todo> */}
 
 
 
