@@ -2,6 +2,7 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Todo from './Todo'
 
 function App() {
 
@@ -15,21 +16,58 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
+
       <h1>Vite + React</h1>
 
-      <Trial></Trial>
+      <Todo
+        task={'react'}
+        isDone={true}>
+      </Todo>
+
+      <Todo
+        task={'angular'}
+        isDone={false}>
+      </Todo>
+
+
+
+
+      {/* <Trial></Trial>
       <Developer></Developer>
-      <Device name="laptop"></Device>
-      <Device name="mobile"></Device>
+      <Device name="laptop" model="hp"></Device>
+      <Device name="mobile" model="mi"></Device>
+
+      <Student sreni="10" roll="3"></Student>
+      <Student sreni={5} roll={5}></Student>
+      <Student></Student> */}
 
     </>
   )
 
 }
 
-function Device(){
+function Device(props) { // here use props directly
+  // console.log(props);
+  let name = props.name; // here also can take value in a variable
   return (
-    <h2>My device is : laptop</h2>
+    <div>
+      <h2>My device is : {name} and model:{props.model}</h2>
+      <h2></h2>
+    </div>
+  )
+}
+
+// const {sreni,roll} = {sreni : '9' , roll: '3'} // destructure format
+
+function Student({ sreni = 0, roll = 0 }) { // here use props via destructure format and give default value 0
+  return (
+    <div className='trial'>
+      <h3>This is a student</h3>
+      <p>Name:Parosh</p>
+      <p>Class: {sreni} & Roll No: {roll}</p>
+
+    </div>
   )
 }
 
@@ -46,8 +84,8 @@ function Trial() {
 
 function Developer() { // here use css style by using object format
   const developerStyle = {
-    border:'3px solid red',
-    marginTop:'5px',
+    border: '3px solid red',
+    marginTop: '5px',
     borderRadius: '10px'
 
   }
