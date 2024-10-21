@@ -2,6 +2,7 @@
 
 import './App.css'
 import Counter from './Counter'
+import Users from './Users'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <>
 
       <h1>React core concept</h1>
+      <Users></Users>
       <Counter></Counter>
 
 
