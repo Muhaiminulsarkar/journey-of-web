@@ -15,6 +15,7 @@ function App() {
     { id: 2, name: 'Eva Rahman', age: 38 },
     { id: 3, name: 'Shuvro Dev', age: 58 },
     { id: 4, name: 'Pritom', age: 28 },
+    { id: 5, name: 'Parosh', age: 24 },
   ]
 
   return (
