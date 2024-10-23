@@ -4,3 +4,11 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+.visited{
+    background-color: darksalmon;
+}
+
+button{
+    margin: 4px;
+}
