@@ -26,7 +26,7 @@ const Countries = () => {
 
     return (
         <div >
-            <h3>Countries: {countries.length}</h3>
+            <h3>Countries present: {countries.length}</h3>
 
             <div>
                 <h4>Visited Countries:{visitedCountries.length}</h4>
