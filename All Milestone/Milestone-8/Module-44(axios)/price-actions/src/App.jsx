@@ -1,23 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import NavBar from './components/Navbar/NavBar'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+
 
   return (
     <>
 
       <h1 className='text-4xl'>Vite + React</h1>
+      <NavBar></NavBar>
 
-      <label className="swap swap-flip text-9xl">
-        {/* this hidden checkbox controls the state */}
-        <input type="checkbox" />
-
-        <div className="swap-on">😈</div>
-        <div className="swap-off">😇</div>
-      </label>
     </>
   )
 }
