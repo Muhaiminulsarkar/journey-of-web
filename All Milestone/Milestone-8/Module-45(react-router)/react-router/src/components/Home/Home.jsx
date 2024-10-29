@@ -1,13 +1,17 @@
 import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 
 const Home = () => {
     return (
-        <div>
+        <div className="flex flex-col  h-96">
             <Header></Header>
-            <h2>Hello, this is the Home components</h2>
-            <Outlet></Outlet>
+            <div className="flex-grow">
+                <h2>Hello, this is the Home components</h2>
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
         </div>
     );
 };
