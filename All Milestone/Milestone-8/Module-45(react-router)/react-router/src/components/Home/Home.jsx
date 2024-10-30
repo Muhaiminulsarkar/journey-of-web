@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 
 const Home = () => {
     return (
-        <div className="flex flex-col  h-96">
+        <div className="flex flex-col">
             <Header></Header>
             <div className="flex-grow">
                 <h2>Hello, this is the Home components</h2>
