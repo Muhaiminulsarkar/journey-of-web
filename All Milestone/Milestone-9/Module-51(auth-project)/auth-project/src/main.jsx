@@ -5,10 +5,11 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import { Root } from 'postcss';
-import Home from './components/Home.jsx';
-import Login from './components/Login.jsx';
-import Register from './components/Register.jsx';
+import Root from './components/Root';
+import Home from './components/Home';
+import Login from './components/Login';
+import Register from './components/Register';
+import AuthProvider from './components/providers/AuthProvider';
 
 
 const router = createBrowserRouter([
@@ -18,23 +19,24 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>,
+        element: <Home></Home>
       },
       {
-        path: '/login',
-        element: <Login></Login>,
+        path: 'login',
+        element: <Login></Login>
       },
       {
-        path: '/register',
-        element: <Register></Register>,
+        path: 'register',
+        element: <Register></Register>
       },
-
     ]
   },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )
